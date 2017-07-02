@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+/*body {
+  background-color: lightblue;
+}
+
+.searchbar {
+    margin: auto;
+    width: 10%;
+    text-align: center;
+    padding: 10px;
+    top: 57px;
+    position: relative;
+}
+
+.mostsearched {
+  text-align: center;
+}
+.mostsearched img {
+  width: 20%;
+}
+.logoimage img {
+  width: 15%;
+  float: left;
+}
+.logoimage {
+  background-color: green;
+  margin: 0;
+  height: 150px;
+}*/
+p {
+  padding: 1em;
+}
+ .header img {
+  width: 6%;
+  float: left;
+  background-color: green;
+  margin-left: 8em;
+}
+h2 {
+  background-color: green;
+  margin-right: 5em;
+}
+.header {
+  padding: 1em;
+  font-style: italic;
+  text-decoration: underline;
+  background-color: green;
+  padding-bottom: 1em;
+ }
+a.thumbnail {
+  background-color: lightblue;
+}
+* {
+  background: lightblue;
+  text-align: center;
+}
+a.thumbnail img {
+  width: 250px;
+  height: 200px;
+}
+body {
+  background-color: lightblue;
+}
+
+/*Jump
+Mark as read (esc)*/
