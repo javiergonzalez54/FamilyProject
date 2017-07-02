@@ -23,6 +23,7 @@
   <img src="https://ss7.vzw.com/is/image/VerizonWireless/beats-solo2-on-ear-headphone-luxe-edition-black-ml9e2am-a-iset?&wid=220&hei=220&$pngalpha$" alt="">
   <p>Get directions to Walmart and purchase this item</p>
 </div> -->
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="application.css">
@@ -35,15 +36,18 @@
 
 <div class="container-fluid">
   <div class="row">
-
+    <% @posts.each do |post| %>
    <div class="col-lg-3 col-md-4 col-sm-6">
-      <a href="http://images.all-free-download.com/images/graphiclarge/butterfly_flower_01_hd_pictures_166973.jpg" class="thumbnail">
-        <p>Flower Power</p>
-        <img src="http://images.all-free-download.com/images/graphiclarge/butterfly_flower_01_hd_pictures_166973.jpg" />
+      <a href="<%= post.image.url %>" class="thumbnail">
+        <p><%= post.title %></p>
+        <%= image_tag(post.image.url(:med)) %>
       </a>
+      <%= link_to 'Edit', edit_post_path(post) %>
+      <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
     </div>
+    <% end %>
 
-   <div class="col-lg-3 col-md-4 col-sm-6">
+   <!-- <div class="col-lg-3 col-md-4 col-sm-6">
       <a href="https://static.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg" class="thumbnail">
         <p>Look! More Flowers!</p>
         <img src="https://static.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg" />
@@ -90,7 +94,7 @@
         <p>Super flower</p>
         <img src="http://dzenna.voxxyz.com/wp-content/uploads/sites/315/2017/02/Flowers.jpg" alt="...">
       </a>
-    </div>
+    </div> -->
   </div>
 </div>
 
