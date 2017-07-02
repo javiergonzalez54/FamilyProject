@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :posts
   root 'home#index'
   get 'sessions/new'
   get 'signup', to: 'users#new', as: 'signup'
