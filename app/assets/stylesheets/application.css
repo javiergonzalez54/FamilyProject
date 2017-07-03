@@ -66,10 +66,10 @@ p {
 /*a.thumbnail {
   background-color: lightblue;
 }*/
-* {
+/** {
   /*background: lightblue;*/
-  text-align: center;
-}
+  /*text-align: center;*/
+/*}*/*/
 a.thumbnail img {
   width: 250px;
   height: 200px;
