@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :posts
-  get '/' => 'home#index'
+  root 'home#index'
   get 'sessions/new'
   get 'signup', to: 'users#new', as: 'signup'
   get 'login', to: 'sessions#new', as: 'login'
