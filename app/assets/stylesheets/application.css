@@ -44,39 +44,39 @@
   height: 150px;
 }*/
 p {
-  padding: 1em;
+  /*padding: 1em;
 }
  .header img {
   width: 6%;
   float: left;
   background-color: green;
   margin-left: 8em;
-}
-h2 {
+}*/
+/*h2 {
   background-color: green;
   margin-right: 5em;
-}
-.header {
+}*/
+/*.header {
   padding: 1em;
   font-style: italic;
   text-decoration: underline;
   background-color: green;
   padding-bottom: 1em;
- }
-a.thumbnail {
+ }*/
+/*a.thumbnail {
   background-color: lightblue;
-}
+}*/
 * {
-  background: lightblue;
+  /*background: lightblue;*/
   text-align: center;
 }
 a.thumbnail img {
   width: 250px;
   height: 200px;
 }
-body {
+/*body {
   background-color: lightblue;
-}
+}*/
 
 /*Jump
 Mark as read (esc)*/
