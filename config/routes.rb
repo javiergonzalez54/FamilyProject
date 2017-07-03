@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :posts
-  root 'home#index'
+  get '/' => 'home#index'
   get 'sessions/new'
   get 'signup', to: 'users#new', as: 'signup'
   get 'login', to: 'sessions#new', as: 'login'
@@ -8,9 +8,8 @@ Rails.application.routes.draw do
 
   resources :users
   resources :sessions
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
 
-get '/headphones' => 'home#headphones'
+get '/album' => 'home#headphones'
 
 end

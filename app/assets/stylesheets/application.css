@@ -1,83 +1,87 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-
-
-/*body {
-  background-color: lightblue;
+body {
+  background-image: url(https://ak2.picdn.net/shutterstock/videos/1406737/thumb/1.jpg);
 }
 
-.searchbar {
-    margin: auto;
-    width: 10%;
-    text-align: center;
-    padding: 10px;
-    top: 57px;
-    position: relative;
+.col-lg-3 {
+  margin-top: 2em;
 }
 
-.mostsearched {
+.edit_icon {
+  padding: 8px 25px;
+  font-size: 15px;
   text-align: center;
-}
-.mostsearched img {
-  width: 20%;
-}
-.logoimage img {
-  width: 15%;
-  float: left;
-}
-.logoimage {
-  background-color: green;
-  margin: 0;
-  height: 150px;
-}*/
-/*p {*/
-  /*padding: 1em;
-}
- .header img {
-  width: 6%;
-  float: left;
-  background-color: green;
-  margin-left: 8em;
-}*/
-/*h2 {
-  background-color: green;
-  margin-right: 5em;
-}*/
-/*.header {
-  padding: 1em;
-  font-style: italic;
-  text-decoration: underline;
-  background-color: green;
-  padding-bottom: 1em;
- }*/
-/*a.thumbnail {
+  cursor: pointer;
+  outline: none;
+  color: #fff;
   background-color: lightblue;
-}*/
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 9px #999;
+  color: black;
+}
+
+.edit_icon:hover {
+  background-color: #3e8e41
+}
+
+.edit_icon:active {
+  background-color: #3e8e4;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.destroy_icon {
+  padding: 8px 12px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: lightblue;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 9px #999;
+}
+
+.destroy_icon:hover {
+  background-color: #3e8e41
+}
+
+.destroy_icon:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.edit {
+  margin-top: 7em;
+}
+
+.new_post {
+  margin-top: 5em;
+}
+
+.new_user {
+  margin-top: 4em;
+}
+
+.posts {
+  margin-top: 7em;
+}
+
 * {
-  /*background: lightblue;*/
   text-align: center;
 }
+
+.container-fluid {
+  margin-top: 7em;
+}
+
+a.thumbnail {
+  border: 0px;
+  background: none;
+}
+
 a.thumbnail img {
   width: 250px;
   height: 200px;
-  margin-top: 5em;
+  border-radius: 50%;
 }
-/*body {
-  background-color: lightblue;
-}*/
-
-/*Jump
-Mark as read (esc)*/
