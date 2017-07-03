@@ -43,7 +43,7 @@
   margin: 0;
   height: 150px;
 }*/
-p {
+/*p {*/
   /*padding: 1em;
 }
  .header img {
@@ -66,13 +66,14 @@ p {
 /*a.thumbnail {
   background-color: lightblue;
 }*/
-/** {
+* {
   /*background: lightblue;*/
-  /*text-align: center;*/
-/*}*/*/
+  text-align: center;
+}
 a.thumbnail img {
   width: 250px;
   height: 200px;
+  margin-top: 5em;
 }
 /*body {
   background-color: lightblue;
