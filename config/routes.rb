@@ -6,10 +6,13 @@ Rails.application.routes.draw do
   get 'login', to: 'sessions#new', as: 'login'
   get 'logout', to: 'sessions#destroy', as: 'logout'
 
+
   resources :users
   resources :sessions
 
 
-get '/album' => 'home#headphones'
+# get '/album' => 'home#headphones'
+get '/users/:id' => 'home#headphones'
+get 'users/show/:id'  => 'users#show'
 
 end

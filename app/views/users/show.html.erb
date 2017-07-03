@@ -1,0 +1,15 @@
+<h1><%= @user.email %></h1>
+<div class="container-fluid">
+  <div class="row">
+    <% @posts.each do |post| %>
+   <div class="col-lg-3 col-md-4 col-sm-6">
+      <a href="<%= post.image.url %>" class="thumbnail">
+        <p><%= post.title %></p>
+        <%= image_tag(post.image.url(:med)) %>
+      </a>
+      <span class="edit_icon"><%= link_to 'Edit', edit_post_path(post) %></span>
+      <span class="destroy_icon"><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+    </div>
+    <% end %>
+  </div>
+</div>

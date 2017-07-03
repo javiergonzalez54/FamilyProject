@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+
   def index
     @user = current_user
   end
@@ -6,6 +7,8 @@ class UsersController < ApplicationController
   def new
     @user = User.new
   end
+
+
   def create
     @user = User.new(allowed_params)
     if @user.save
@@ -14,9 +17,18 @@ class UsersController < ApplicationController
     else
       render "new"
     end
+
   end
+
+
+  def show
+    @user = current_user
+    @posts = @user.posts
+  end
+
+
   private
  def allowed_params
-   params.require(:user).permit(:email, :password, :password_digest)
+   params.require(:user).permit(:email, :password, :password_digest, :id)
  end
 end

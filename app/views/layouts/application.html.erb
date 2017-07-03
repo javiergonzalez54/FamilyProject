@@ -19,13 +19,13 @@
 </head>
 
 <body>
-<h2>  <% if current_user %>
+  <% if current_user %>
   Logged in as <%= current_user.email %>.
   <%= link_to "Log Out", logout_path %>
   <% else %>
   <%= link_to "Sign Up", signup_path %> or
   <%= link_to "Log In", login_path %>
-  <% end %> </h2>
+  <% end %>
 
   <!-- Navigation -->
   <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
@@ -47,7 +47,7 @@
             <a href="#page-top"></a>
           </li>
           <li class="page-scroll">
-            <a href="http://localhost:3000/album">Album</a>
+            <a href="http://localhost:3000/users/:id">Album</a>
           </li>
           <li class="page-scroll">
             <a href="http://localhost:3000/posts">Photo Workshop</a>
