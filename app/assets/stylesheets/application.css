@@ -128,3 +128,9 @@ a.thumbnail img {
   height: 200px;
   border-radius: 50%;
 }
+
+.circ {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
