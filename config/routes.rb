@@ -11,8 +11,9 @@ Rails.application.routes.draw do
   resources :sessions
 
 
-# get '/album' => 'home#headphones'
+get '/album' => 'home#headphones'
 get '/users/:id' => 'home#headphones'
 get 'users/show/:id'  => 'users#show'
+
 
 end
