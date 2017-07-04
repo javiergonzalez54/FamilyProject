@@ -169,3 +169,10 @@ a.thumbnail img {
 .white {
   color: white;
 }
+.hide {
+  visibility: hidden;
+}
+.margintop {
+  position: relative;
+  top: 10em;
+}

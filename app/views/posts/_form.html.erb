@@ -12,22 +12,22 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :post_title %>
+    <span class="white"><%= form.label :title %></span>
+    <span class="black"><%= form.text_field :title, id: :post_title %></span>
   </div>
   <div class="field">
-    <%= form.label :user_id %>
+    <span class="hide"><%= form.label :user_id %></span>
     <%= form.hidden_field :user_id, id: :post_user_id, value: current_user.id %>
   </div>
-
+  <p> </p>
   <div class="field">
-    <%= form.label :body %>
-    <%= form.text_field :body, id: :post_body %>
+    <span class="white"><%= form.label :body %></span>
+    <span class="black"><%= form.text_field :body, id: :post_body %></span>
   </div>
 
   <div class="field">
-    <%= form.label :image %>
-    <%= form.file_field :image, id: :post_image %>
+    <span class="white"><%= form.label :image %></span>
+    <span class="black"><%= form.file_field :image, id: :post_image %></span>
   </div>
 
   <div class="actions">
