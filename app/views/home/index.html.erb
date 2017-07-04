@@ -11,6 +11,19 @@
                     <img class="circ" src="http://pop.h-cdn.co/assets/16/33/480x264/gallery-1471381857-gif-season-2.gif" alt="">
                     <div class="intro-text">
                         <h1 class="name">≈≈≈ORBZ≈≈≈</h1>
+                        <h1>Log In</h1>
+
+                      <%= form_tag sessions_path do %>
+                        <div class="field">
+                          <%= label_tag :email %><br />
+                          <%= text_field_tag :email, params[:email] %>
+                        </div>
+                        <div class="field">
+                          <%= label_tag :password %><br />
+                          <%= password_field_tag :password %>
+                        </div>
+                        <div class="actions"><%= submit_tag "Log In" %></div>
+                      <% end %>
                         <hr class="star-light">
                         <span class="skills">A picture says a thousand words. A gif says a million.</span>
                     </div>
