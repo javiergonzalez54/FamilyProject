@@ -173,3 +173,7 @@ a.thumbnail img {
 h2 {
   color: white;
 }
+.margintop {
+  position: relative;
+  top: 10em;
+}
