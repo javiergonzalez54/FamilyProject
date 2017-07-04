@@ -145,6 +145,30 @@ a.thumbnail img {
   border-radius: 50%;
 }
 
-.mostviewed {
+.sign_up_page {
+  color: white;
+  margin-top: 10em;
+}
+.fancy_box {
+  width: 35em;
+   background-image: url(http://data.whicdn.com/images/269418814/large.gif);
+   box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.4);
+   height: 35em;
+   border-radius: 50%;
+   margin: auto;
+ }
+.field {
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  top: 9em;
+}
+.actions {
+  color: black;
+}
+.black {
+  color: black;
+}
+.white {
   color: white;
 }
