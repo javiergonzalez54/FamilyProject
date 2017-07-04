@@ -157,14 +157,11 @@ a.thumbnail img {
    border-radius: 50%;
    margin: auto;
  }
-.field {
+.field_sign_up {
   padding: 10px;
   text-align: center;
   position: relative;
   top: 9em;
-}
-.actions {
-  color: black;
 }
 .black {
   color: black;

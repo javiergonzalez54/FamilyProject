@@ -15,18 +15,24 @@
     <% end %>
 
     <p><div class="field">
+      <span class="field_sign_up">
       <%= f.label :email %><br />
       <span class="black"><%= f.text_field :email %></span>
+      </span>
     </div></p>
     <p><div class="field">
+      <span class="field_sign_up">
       <%= f.label :password %><br />
       <span class="black"><%= f.password_field :password %></span>
+      </span>
     </div></p>
     <p><div class="field">
+      <span class="field_sign_up">
       <%= f.label :password_confirmation %><br />
       <span class="black"><%= f.password_field :password_confirmation %></span>
+      </span>
     </div></p>
-    <p><div class="actions"><%= f.submit "Sign Up" %></div></p>
+    <p><div class="field_sign_up"><span class="black"><%= f.submit "Sign Up" %></span></div></p>
     <% end %>
   </div>
 </div>
