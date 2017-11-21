@@ -1,4 +1,5 @@
 # README
+To run type "rails s" in terminal, then in your browswer, type "localhost:3000"
 
 This project was done using Rails 5, and the Paperclip gem as well as some Bootstrap components.
 
